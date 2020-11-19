@@ -17,6 +17,13 @@ body {
     height: 500px;
     background-color: #ddd;
     display: flex;
+    /* Default display of flex-direction: row;*/
+    flex-direction: row/* column - column-reverse - row-reverse*/
+    ;
+    justify-content: space-around;
+    flex-wrap: /* nowrap */
+    wrap/* wrap contents depends on child width */
+    ;
 }
 
 
@@ -27,4 +34,10 @@ body {
     height: 100px;
     background-color: aquamarine;
     border: 1px solid #000;
+}
+
+@media (max-width:1200px) {
+    .parent {
+        flex-direction: column;
+    }
 }
